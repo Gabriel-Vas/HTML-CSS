@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiperLinks</title>
+</head>
+<body>
+   <h1>Criar um Link</h1>
+   <p>abaixo você verá um vídeo em Coreano</p>
+   <a href="https://www.youtube.com/watch?v=_doJaM8acW8"> Teenage Moms</a> 
+   <p>Agora vamos usar também o hreflang que ajuda dando a linguagem de página, e que ajuda o tradutor da maquina saber se deve traduzir ou não</p>
+   
+   <a href="https://www.youtube.com/watch?v=_doJaM8acW8" hreflang="pt-br">Teenage Moms</a>
+   <h2>Utilidades</h2>
+   <ol type="a">
+    <li><code>_blank</code> = Vai abrir o link em uma nova janela em branco</li>
+    <li><code>_self</code> = vai abrir o link ou a janela no frame atual</li>
+    <li><code>_top</code> = vai desfazer todos os frames e abrir o destino no navegador completo</li>
+    <li><code>_parent</code> = Similar ao uso do top em uma referência à janela mãe</li>
+    <li><code>Nome-do-frame</code> caso esteja usando frames, indica o nome da janela a abrir</li>
+ <p>como uso de frames está quase em desuso, normalmente só se utliza <code>_blank</code> ou <code>_self</code></p>
+   </ol>
+   <h2>EXEMPLOS:</h2>
+   <a href="https://www.youtube.com/watch?v=_doJaM8acW8" target="_self"> Usando Self</a>
+   <br>
+   <a href="https://www.youtube.com/watch?v=_doJaM8acW8" target="_blank"> Usando o _blank</a>
+   <h2>Mais Extras</h2>
+   <ol>
+    <li><code>Next</code> = indica que o link é para a próxima parte do documento atual</li>
+    <li><code>Prev</code> = Indica que o link é para a próxima parte do documento atual </li>
+    <li><code>author</code> = Indica que é um link para o site do autor do artigo atual</li>
+    <li><code>external</code> = Indica que é um link para outro site que não parte do site atual</li>
+    <li><code>nofollow</code> = Indica que é um link para um site não endossado, como um link pago</li>
+   </ol>
+   <h2>EXEMPLOS</h2>
+    <a href="pag002.html" target="_self" rel="next"> Continue lendo Usando target self rel next
+
+    </a>
+    <br>
+    <a href="https://www.youtube.com/watch?v=_doJaM8acW8" target="_blank" rel="external"> Outra janela usando target blank real external
+    </a>
+    <p>Você também pode acessar a nossa <a href="NOTICIAS/PAG003.html" rel="next" target="_self"> pagina de noticias.</a></p>
+    <h1>Links para Downloads</h1>
+    <ul>
+        <li><a href="livro/Curriculo Mais Avançado.pdf" download="Curriculo Mais Avançado.pdf" type="application/pdf"> baixar o livro em pdf</a></li>
+        <li><a href="livro/Curriculo Mais Avançado.zip" download="Curriculo Mais Avançado.zip" type="application/zip"> Baixa em zip</a></li>
+    </ul>
+
+
+</body>
+</html>
